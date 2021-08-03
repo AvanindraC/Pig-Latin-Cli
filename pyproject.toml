@@ -1,0 +1,33 @@
+[tool.poetry]
+name = "piglatincli"
+version = "0.1.0"
+description = "A cli to convert English to pig latin and vice versa"
+authors = ["Avanindra Chakraborty"]
+license = "MIT"
+readme="README.md"
+homepage= "https://github.com/AvanindraC/Pig-Latin-Cli"
+repository "https://github.com/AvanindraC/Pig-Latin-Cli"
+
+classifiers=[
+        "License :: OSI Approved :: MIT License",
+        "Programming Language :: Python :: 3",
+        "Programming Language :: Python :: 3.6",
+        "Programming Language :: Python :: 3.7",
+        "Programming Language :: Python :: 3.8",
+	"Programming Language :: Python :: 3.9",
+        "Operating System :: OS Independent",
+    ]
+
+[tool.poetry.dependencies]
+python = "^3.7"
+click = "^8.0.1"
+click-help-colors = "^0.9.1"
+
+[tool.poetry.dev-dependencies]
+
+[tool.poetry.scripts]
+plcli = "piglatincli:main"
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"
